@@ -1,11 +1,15 @@
 import React from 'react';
- 
 import './App.css';
+import Homepage from './HomepageComponent'
+
+//COMPONENTS
+
 
 function App() {
   return (
     <div>
-      <h3>HELLO WORLD</h3>
+      <Homepage />
+   
       
     </div>
   );
