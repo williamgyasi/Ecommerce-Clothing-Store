@@ -10,9 +10,9 @@ import {SECTIONS} from '../../Store'
 export default function DirectoryComponent(){
     return(
         <div className="directory-menu">
-            {SECTIONS.map(({title})=>{
+            {SECTIONS.map(({title,id,imageUrl,size})=>{
                 return(
-                    <MenuItemComponent title={title.toUpperCase()} />
+                    <MenuItemComponent size={size} key={id} imageURL={imageUrl} title={title.toUpperCase()} />
                 )
             })}
         </div>
