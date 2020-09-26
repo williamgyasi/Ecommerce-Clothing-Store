@@ -23,7 +23,7 @@ function App() {
       <Router>
         <Switch>
         <Route exact path='/' component={Homepage} />
-        <Route path='/hats/:id' component={HatsPage}/>
+        <Route path='/hats/' component={HatsPage}/>
         </Switch>
       </Router>
       
