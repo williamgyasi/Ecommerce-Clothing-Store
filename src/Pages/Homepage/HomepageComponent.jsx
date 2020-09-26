@@ -4,14 +4,23 @@ import './HomepageComponent.scss';
 
 
 
-const Homepage =()=>(
-    <div className='homepage'>
-        <DirectoryComponent />
-        
-       
-    </div>
+const Homepage =({history})=>{
+    console.log("????????//")
 
-)
+    console.log(history)
+
+    return(
+        <div className='homepage'>
+        <DirectoryComponent />
+    
+    </div>
+    )
+
+}
+    
+    
+
+
 
 
 export default Homepage
