@@ -1,20 +1,12 @@
 import React from 'react';
 import './App.css';
-import Homepage from './Pages/Homepage/HomepageComponent'
+
 import {Route,BrowserRouter as Router,Switch,useRouteMatch} from 'react-router-dom'
 
-const HatsPage=(props)=>{
-  const match =useRouteMatch()
-  console.log(props)
-  console.log(match)
-  return(
-    <div>
-    <h1>WELCOME TO THE HATS PAGE{match.params.id}</h1>
-  </div>
-  )
-}
-
 //COMPONENTS
+import Homepage from './Pages/Homepage/HomepageComponent'
+import ShopComponent from './Pages/Shop/ShopComponent'
+
 
 
 function App() {
@@ -23,7 +15,7 @@ function App() {
       <Router>
         <Switch>
         <Route exact path='/' component={Homepage} />
-        <Route path='/hats/' component={HatsPage}/>
+        <Route path='/shop' component={ShopComponent}/>
         </Switch>
       </Router>
       
