@@ -4,8 +4,8 @@ import './App.css';
 import {Route,BrowserRouter as Router,Switch,useRouteMatch} from 'react-router-dom'
 
 //COMPONENTS
-import Homepage from './Pages/Homepage/HomepageComponent'
-import ShopComponent from './Pages/Shop/ShopComponent'
+import Homepage from './Pages/Homepage/Homepage'
+import ShopComponent from './Pages/Shop/Shop'
 
 
 
