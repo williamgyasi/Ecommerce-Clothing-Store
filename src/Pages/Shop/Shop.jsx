@@ -1,11 +1,20 @@
 import React,{useState,useEffect} from 'react'
-import {SECTIONS} from '../../Store'
+import {SHOP_DATA} from '../../Store'
 
+import './Shop.scss'
+
+import COllectionPreview from  '../../Components/Preview-Collection/PreviewCollectionComponent'
 const ShopComponent=()=>{
-    const [categories,setCategories]=useState(SECTIONS)
+    const [categories,setCategories]=useState(SHOP_DATA)
     return(
-        <div>
-            <h3>HELLO SHOP</h3>
+        <div className="shop-page">
+           {
+               SHOP_DATA.map(({id ,...otherProps})=>{
+                   return(
+                       <COllectionPreview key={id} {...otherProps} />
+                   )
+               })
+           }
         </div>
     )
 
