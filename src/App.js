@@ -5,7 +5,7 @@ import {Route,BrowserRouter as Router,Switch,useRouteMatch} from 'react-router-d
 
 //COMPONENTS
 import Homepage from './Pages/Homepage/Homepage'
-import ShopComponent from './Pages/Shop/Shop'
+import Shop from './Pages/Shop/Shop'
 
 
 
@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Switch>
         <Route exact path='/' component={Homepage} />
-        <Route path='/shop' component={ShopComponent}/>
+        <Route  path='/shop' component={Shop}/>
         </Switch>
       </Router>
       
